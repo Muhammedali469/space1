@@ -1,0 +1,44 @@
+main div {
+  display: grid;
+  justify-content: center;
+}
+@keyframes race {
+  0% {
+    transform: rotateY(180deg) rotate(0deg);
+  }
+  50% {
+    transform: translate(100%, 0px) rotateY(0) rotate(360deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .div label,
+  input {
+    font-size: 25px;
+  }
+}
+.moon {
+  border-radius: 100%;
+  animation: race 10s infinite;
+}
+@keyframes race {
+  0% {
+    transform: rotateY(0, 0) rotate(0deg);
+  }
+  49% {
+    transform: rotate(70vw, 0px);
+    rotatex: (360deg);
+  }
+  50% {
+    transform: translate(70vw, 0px) rotateY(0) rotate(360deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+main {
+  background: rgb(26, 48, 78);
+}

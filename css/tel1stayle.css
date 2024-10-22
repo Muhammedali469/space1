@@ -1,0 +1,103 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.formobail {
+  position: fixed;
+  display: none;
+  background: #000;
+  width: 100%;
+  z-index: 100;
+  left: 0;
+  height: 100vh;
+}
+.divburger:hover .formobail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.burger {
+  width: 70px;
+}
+header {
+  min-height: 80px;
+  background: black;
+  color: wheat;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.for {
+  display: none;
+}
+@media (min-width: 768px) {
+  .formobail {
+    display: none;
+  }
+  .burger {
+    display: none;
+  }
+  .for {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 20px;
+  }
+  header {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+.fon {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+main {
+  color: rgb(0, 247, 37);
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+body {
+  background: #191919;
+}
+.sun {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  animation: race reverse 100s infinite;
+}
+@keyframes race {
+  0% {
+    transform: rotate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(0, 0px) rotate(360deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+.divson {
+  display: flex;
+  justify-content: space-between;
+}
+footer {
+  background: #343434;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+.navbar-footer {
+  display: flex;
+  justify-content: space-between;
+  color: aqua;
+}
+.icon {
+  width: 50px;
+}

@@ -1,0 +1,44 @@
+.un {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  animation: race reverse 60s infinite;
+}
+@keyframes race {
+  0% {
+    transform: rotate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(0, 0px) rotate(360deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+@media (min-width: 768px) {
+  .ivsun {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+table th,
+td {
+  border: 1px solid gold;
+  padding-left: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  width: 40px;
+}
+table {
+  border-collapse: collapse;
+}
+@media (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+  }
+}
+.navbar {
+  color: aqua;
+}
